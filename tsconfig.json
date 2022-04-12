@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "allowJs": true,
+        "checkJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": false,
+        "outDir": "./temp",
+        "declaration": true,
+        "declarationDir": "./temp",
+        "emitDeclarationOnly": true,
+        "paths": {
+            "unocss-preset-scrollbar": [
+                "./src"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
