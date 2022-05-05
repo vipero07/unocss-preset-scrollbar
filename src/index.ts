@@ -5,17 +5,19 @@ export function presetScrollbar(): Preset {
 	return {
 		name: 'unocss-preset-scrollbar',
 		variants: [
-			(matcher) => {
-				const matches = matcher.match(
-					/^(resizer|scrollbar(?:-(?:thumb|track(?:-piece)?|button|corner))?):/
-				);
-				if (!matches) {
-					return matcher;
-				}
-				return {
-					matcher: matcher.slice(matches[0].length),
-					selector: (s) => `${s}::-webkit-${matches[1]}`
-				};
+			{
+				match: (matcher) => {
+					const matches = matcher.match(
+						/^(resizer|scrollbar(?:-(?:thumb|track(?:-piece)?|button|corner))?):/
+					);
+					if (matches) {
+						return {
+							matcher: matcher.slice(matches[0].length),
+							selector: (s) => `${s}::-webkit-${matches[1]}`
+						};
+					}
+				},
+				multiPass: true,
 			}
 		],
 		rules: [
