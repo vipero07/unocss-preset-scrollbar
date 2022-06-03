@@ -1,6 +1,6 @@
 {
   "name": "unocss-scrollbar-variant",
-  "version": "0.32.12",
+  "version": "0.37.2",
   "description": "scrollbar preset for UnoCSS",
   "keywords": [
     "unocss",
@@ -40,19 +40,16 @@
     "release": "bumpp --commit --push --tag && pnpm publish",
     "typecheck": "tsc --noEmit"
   },
-  "peerDependencies": {
-    "unocss": "^0.32.12"
-  },
   "dependencies": {
-    "@unocss/preset-mini": "^0.32.12"
+    "@unocss/preset-mini": "^0.37.2"
   },
   "devDependencies": {
     "bumpp": "^7.1.1",
-    "pnpm": "^6.32.6",
+    "pnpm": "^7.1.7",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.3",
-    "unbuild": "^0.7.2",
-    "unocss": "^0.32.12",
-    "vite": "^2.9.1"
+    "typescript": "^4.7.2",
+    "unbuild": "^0.7.4",
+    "unocss": "^0.37.2",
+    "vite": "^2.9.9"
   }
 }
