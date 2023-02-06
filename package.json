@@ -41,7 +41,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@unocss/preset-mini": "^0.45.5"
+    "@unocss/preset-mini": "^0.49.4"
   },
   "devDependencies": {
     "bumpp": "^8.2.1",
