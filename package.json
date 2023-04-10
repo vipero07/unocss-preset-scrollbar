@@ -46,7 +46,7 @@
   "devDependencies": {
     "bumpp": "^9.0.0",
     "pnpm": "^8.1.0",
-    "rimraf": "^4.1.2",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.2",
     "unbuild": "^1.1.1",
     "unocss": "^0.50.1",
