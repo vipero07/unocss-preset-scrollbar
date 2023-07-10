@@ -22,6 +22,18 @@ export function presetScrollbar(): Preset {
 		],
 		rules: [
 			[
+				/^scrollbar-gutter-both$/,
+				() => ({
+					'scrollbar-gutter': 'stable both-edges',
+				})
+			],
+			[
+				/^scrollbar-gutter-(auto|stable|inherit|initial|revert|revert-layer|unset)$/,
+				([, p]) => ({
+					'scrollbar-gutter': p,
+				})
+			],
+			[
 				/^scroll(?:bar)?-(thin|none|auto)$/,
 				([, w]) => ({
 					'scrollbar-width': w
