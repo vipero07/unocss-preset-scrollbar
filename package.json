@@ -48,7 +48,7 @@
     "pnpm": "^8.1.0",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.2",
-    "unbuild": "^1.1.1",
+    "unbuild": "^2.0.0",
     "unocss": "^0.56.2",
     "vite": "^4.1.1"
   }
