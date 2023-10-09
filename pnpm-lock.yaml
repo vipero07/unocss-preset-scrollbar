@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@unocss/preset-mini':
     specifier: ^0.56.2
-    version: 0.56.2
+    version: 0.56.5
 
 devDependencies:
   bumpp:
@@ -917,11 +917,22 @@ packages:
 
   /@unocss/core@0.56.2:
     resolution: {integrity: sha512-44pqqOgO9Lxg9WHpz5RYJ8PvnuEyoc5WuntmPkIeQcoIBArgAleAMKuDQ53MLsF+M1fwz6oBeWDk8ASO6Wd/kw==}
+    dev: true
+
+  /@unocss/core@0.56.5:
+    resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
 
   /@unocss/extractor-arbitrary-variants@0.56.2:
     resolution: {integrity: sha512-mDuCk5S2j3lmtflzibMUKtkdPXUycuNMw0FRtTobjl1p6V1TcJaN6SrL8+voIwLn+PffLWibuNljyal0BC/sMw==}
     dependencies:
       '@unocss/core': 0.56.2
+    dev: true
+
+  /@unocss/extractor-arbitrary-variants@0.56.5:
+    resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
+    dependencies:
+      '@unocss/core': 0.56.5
+    dev: false
 
   /@unocss/inspector@0.56.2:
     resolution: {integrity: sha512-VqmmFpHwlbRiQw5I//oF3o7xHtaZOk6m9xHW6hxVuAkRNFPNFR73hToilfQgkvrt0Qw/rEzDsLYMvI1LuWpvKg==}
@@ -968,6 +979,15 @@ packages:
       '@unocss/core': 0.56.2
       '@unocss/extractor-arbitrary-variants': 0.56.2
       '@unocss/rule-utils': 0.56.2
+    dev: true
+
+  /@unocss/preset-mini@0.56.5:
+    resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/extractor-arbitrary-variants': 0.56.5
+      '@unocss/rule-utils': 0.56.5
+    dev: false
 
   /@unocss/preset-tagify@0.56.2:
     resolution: {integrity: sha512-Z9yj5LyF7pw9lFaxagEX6JxDm0P0/50GF3zXapVsAdNfqG+868vQxgu7VI2G556Kd3zeUNuQhiAWkv9PZY8UJw==}
@@ -1014,7 +1034,15 @@ packages:
     resolution: {integrity: sha512-cG2DtKSjaJOety1ELqbQeavQvpX6CZbrbrANR53671Y4SE+S1QAL/muqr61HI0gFveLidqws5dIQq/8SaZPCyg==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/core': 0.56.2
+      '@unocss/core': 0.56.5
+    dev: true
+
+  /@unocss/rule-utils@0.56.5:
+    resolution: {integrity: sha512-CXIGHCIC9B8WUl9KbbFMSZHcsIgfmI/+X0bjBv6xrgBVC1EQ2Acq4PYnJIbaRGBRAhl9wYjNL7Zq2UWOdowHAw==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.56.5
+    dev: false
 
   /@unocss/scope@0.56.2:
     resolution: {integrity: sha512-8QvO3HlUVe97faBNpkB9i0BVjjqAU0T4ohK/yhG1AIUYhqfXRY5vh22TJxPIqAsNXbF4cUfxvZg1oSi8S6gmqQ==}
