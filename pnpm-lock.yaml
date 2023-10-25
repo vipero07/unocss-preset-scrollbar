@@ -27,7 +27,7 @@ devDependencies:
     version: 2.0.0(typescript@5.2.2)
   unocss:
     specifier: ^0.57.1
-    version: 0.57.1(postcss@8.4.27)(rollup@3.29.4)(vite@4.4.9)
+    version: 0.57.1(postcss@8.4.31)(rollup@3.29.4)(vite@4.4.9)
   vite:
     specifier: ^4.1.1
     version: 4.4.9
@@ -82,7 +82,7 @@ packages:
       '@babel/helpers': 7.23.1
       '@babel/parser': 7.23.0
       '@babel/template': 7.22.15
-      '@babel/traverse': 7.23.0
+      '@babel/traverse': 7.23.2
       '@babel/types': 7.23.0
       convert-source-map: 2.0.0
       debug: 4.3.4
@@ -179,11 +179,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/helper-validator-identifier@7.22.5:
-    resolution: {integrity: sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==}
-    engines: {node: '>=6.9.0'}
-    dev: true
-
   /@babel/helper-validator-option@7.22.15:
     resolution: {integrity: sha512-bMn7RmyFjY/mdECUbgn9eoSY4vqvacUnS9i9vGAGttgFWesO6B4CYWA7XlpbWgBt71iv/hfbPlynohStqnu5hA==}
     engines: {node: '>=6.9.0'}
@@ -194,7 +189,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/template': 7.22.15
-      '@babel/traverse': 7.23.0
+      '@babel/traverse': 7.23.2
       '@babel/types': 7.23.0
     transitivePeerDependencies:
       - supports-color
@@ -232,8 +227,8 @@ packages:
       '@babel/types': 7.23.0
     dev: true
 
-  /@babel/traverse@7.23.0:
-    resolution: {integrity: sha512-t/QaEvyIoIkwzpiZ7aoSKK8kObQYeF7T2v+dazAYCb8SXtp58zEVkWW7zAnju8FNKNdr4ScAOEDmMItbyOmEYw==}
+  /@babel/traverse@7.23.2:
+    resolution: {integrity: sha512-azpe59SQ48qG6nu2CzcMLbxUudtN+dOM9kDbUqGq3HXUJRlo7i8fvPoxQUzYgLZ4cMVmuZgm8vvBpNeRhd6XSw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.22.13
@@ -248,15 +243,6 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/types@7.22.5:
-    resolution: {integrity: sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-string-parser': 7.22.5
-      '@babel/helper-validator-identifier': 7.22.5
-      to-fast-properties: 2.0.0
     dev: true
 
   /@babel/types@7.23.0:
@@ -1142,7 +1128,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.57.1(postcss@8.4.27):
+  /@unocss/postcss@0.57.1(postcss@8.4.31):
     resolution: {integrity: sha512-DexrV+v/qkVh6t660rXigNr2Y6lON8jxD1z2KVk2bjHKhFflF6q6seps6d/MquyLJI1mXF2uANTeFAeL2q6evw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1154,7 +1140,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.1
       magic-string: 0.30.5
-      postcss: 8.4.27
+      postcss: 8.4.31
     dev: true
 
   /@unocss/preset-attributify@0.57.1:
@@ -2329,8 +2315,8 @@ packages:
     hasBin: true
     dev: true
 
-  /postcss@8.4.27:
-    resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -2641,7 +2627,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.57.1(postcss@8.4.27)(rollup@3.29.4)(vite@4.4.9):
+  /unocss@0.57.1(postcss@8.4.31)(rollup@3.29.4)(vite@4.4.9):
     resolution: {integrity: sha512-xLsyJ8+T1/Ux93yrqOvuQy268wF5rSzydlsbqZ5EVfi01PxYyydez3nycPqbyPZientkJ0Yohzd5aBqmZgku3A==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2657,7 +2643,7 @@ packages:
       '@unocss/cli': 0.57.1(rollup@3.29.4)
       '@unocss/core': 0.57.1
       '@unocss/extractor-arbitrary-variants': 0.57.1
-      '@unocss/postcss': 0.57.1(postcss@8.4.27)
+      '@unocss/postcss': 0.57.1(postcss@8.4.31)
       '@unocss/preset-attributify': 0.57.1
       '@unocss/preset-icons': 0.57.1
       '@unocss/preset-mini': 0.57.1
@@ -2686,7 +2672,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.0
       '@babel/standalone': 7.23.1
-      '@babel/types': 7.22.5
+      '@babel/types': 7.23.0
       defu: 6.1.2
       jiti: 1.20.0
       mri: 1.2.0
@@ -2735,7 +2721,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.18.11
-      postcss: 8.4.27
+      postcss: 8.4.31
       rollup: 3.27.2
     optionalDependencies:
       fsevents: 2.3.2
