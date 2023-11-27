@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@unocss/preset-mini':
     specifier: ^0.57.1
-    version: 0.57.6
+    version: 0.57.7
 
 devDependencies:
   bumpp:
@@ -1078,24 +1078,13 @@ packages:
       unconfig: 0.3.11
     dev: true
 
-  /@unocss/core@0.57.6:
-    resolution: {integrity: sha512-rkqMX5Lyyl2u2PF2EMcH/QeFUAoiFeq5vnaGGYV2LVfTlDrEVx8CrNHlBmWr5fXrhyzXi366pK/ErJ2pepGiqg==}
-    dev: false
-
   /@unocss/core@0.57.7:
     resolution: {integrity: sha512-1d36M0CV3yC80J0pqOa5rH1BX6g2iZdtKmIb3oSBN4AWnMCSrrJEPBrUikyMq2TEQTrYWJIVDzv5A9hBUat3TA==}
-
-  /@unocss/extractor-arbitrary-variants@0.57.6:
-    resolution: {integrity: sha512-I4/JpdF/2x4BnG+O6RQFRmfsI0UAJ6ik8Usw4zx2CQIdfTYxRJ4eU52jo5l8cm+YdDrXuiARRAEj6G96qHU3RQ==}
-    dependencies:
-      '@unocss/core': 0.57.6
-    dev: false
 
   /@unocss/extractor-arbitrary-variants@0.57.7:
     resolution: {integrity: sha512-JdyhPlsgS0x4zoF8WYXDcusPcpU4ysE6Rkkit4a9+xUZEvg7vy7InH6PQ8dL8B9oY7pbxF7G6eFguUDpv9xx4Q==}
     dependencies:
       '@unocss/core': 0.57.7
-    dev: true
 
   /@unocss/inspector@0.57.7:
     resolution: {integrity: sha512-b9ckqn5aRsmhTdXJ5cPMKDKuNRe+825M+s9NbYcTjENnP6ellUFZo91sYF5S+LeATmU12TcwJZ83NChF4HpBSA==}
@@ -1137,21 +1126,12 @@ packages:
       - supports-color
     dev: true
 
-  /@unocss/preset-mini@0.57.6:
-    resolution: {integrity: sha512-oOrtP9Wbm5cjokx9o2j/LhwRFB39whVVU1DDXllHyC0TGCXUd6gpmKwg8mePWkWWv0iM7v8EufCU4xCfNmazxQ==}
-    dependencies:
-      '@unocss/core': 0.57.6
-      '@unocss/extractor-arbitrary-variants': 0.57.6
-      '@unocss/rule-utils': 0.57.6
-    dev: false
-
   /@unocss/preset-mini@0.57.7:
     resolution: {integrity: sha512-YPmmh+ZIg4J7/nPMfvzD1tOfUFD+8KEFXX9ISRteooflYeosn2YytGW66d/sq97AZos9N630FJ//DvPD2wfGwA==}
     dependencies:
       '@unocss/core': 0.57.7
       '@unocss/extractor-arbitrary-variants': 0.57.7
       '@unocss/rule-utils': 0.57.7
-    dev: true
 
   /@unocss/preset-tagify@0.57.7:
     resolution: {integrity: sha512-va25pTJ5OtbqCHFBIj8myVk0PwuSucUqTx840r/YSHka0P9th6UGRS1LU30OUgjgr7FhLaWXtJMN4gkCUtQSoA==}
@@ -1194,21 +1174,12 @@ packages:
     resolution: {integrity: sha512-oN9024WVrMewGbornnAPIpzHeKPIfVmZ5IsZGilWR761TnI5jTjHUkswsVoFx7tZdpCN2/bqS3JK/Ah0aot3NQ==}
     dev: true
 
-  /@unocss/rule-utils@0.57.6:
-    resolution: {integrity: sha512-EHsSitEVdADh0SOs3MCioYXojgshlhMwo+zMthmXCQMBispOR70rVYUr8QqqyWBKLt948rbqCxVl3DIXrwYnxA==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@unocss/core': 0.57.7
-      magic-string: 0.30.5
-    dev: false
-
   /@unocss/rule-utils@0.57.7:
     resolution: {integrity: sha512-gLqbKTIetvRynLkhonu1znr+bmWnw+Cl3dFVNgZPGjiqGHd78PGS0gXQKvzuyN0iO2ADub1A7GlCWs826iEHjA==}
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.57.7
       magic-string: 0.30.5
-    dev: true
 
   /@unocss/scope@0.57.7:
     resolution: {integrity: sha512-pqWbKXcrTJ2ovVRTYFLnUX5ryEhdSXp7YfyBQT3zLtQb4nQ2XZcLTvGdWo7F+9jZ09yP7NdHscBLkeWgx+mVgw==}
