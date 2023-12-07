@@ -15,21 +15,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Extract version from package.json
-        uses: sergeysova/jq-action@v2
-        id: version
-        with:
-          cmd: 'jq .devDependencies.unocss package.json -r'
-      - name: Trim version
+      - name: 'Setup jq'
+        uses: dcarbone/install-jq-action@v2
+      - name: Extract and update version
         id: trim
-        env:
-          VERSION: ${{ steps.version.outputs.value }}
-        run: echo "value=${VERSION#^}" >> "$GITHUB_OUTPUT"
-      - name: Update package version in package.json
-        uses: sergeysova/jq-action@v2
-        id: update
-        with:
-          cmd: jq '.version = "${{ steps.trim.outputs.value }}"' package.json || jq .version package.json -r
+        run: |
+          unoversion=$(jq .devDependencies.unocss package.json -r)
+          echo "value=${unoversion#^}" >> "$GITHUB_OUTPUT"
+          jq '.version = "${unoversion#^}"' package.json
       - uses: actions4git/setup-git@v1
       - run: |
           git add package.json
