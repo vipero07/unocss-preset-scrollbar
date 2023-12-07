@@ -24,21 +24,21 @@ jobs:
         uses: sergeysova/jq-action@v2
         id: update
         with:
-          cmd: jq '.version = "${{ steps.version.outputs.value }}"' package.json
+          cmd: jq '.version = "${{ steps.version.outputs.value#^ }}"' package.json
       - uses: actions4git/setup-git@v1
       - run: |
           git add package.json
-          git tag --force v${{ steps.version.outputs.value }}
-          git commit --message 'v${{ steps.version.outputs.value }}'
+          git tag --force v${{ steps.version.outputs.value#^ }}
+          git commit --message 'v${{ steps.version.outputs.value#^ }}'
           git push origin main --force
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.version.outputs.value }}
-          release_name: Release ${{ steps.version.outputs.value }}
+          tag_name: ${{ steps.version.outputs.value#^ }}
+          release_name: Release ${{ steps.version.outputs.value#^ }}
           body: |
             Changes in this Release
-            - Unocss bumped to ${{ steps.version.outputs.value }}
+            - Unocss bumped to ${{ steps.version.outputs.value#^ }}
           draft: false
           prerelease: false
