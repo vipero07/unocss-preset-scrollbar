@@ -20,14 +20,14 @@ jobs:
       - name: Extract and update version
         id: trim
         run: |
-          unoversion=$(jq .devDependencies.unocss package.json -r)
-          version=${unoversion#^}
-          echo "value=${version}" >> "$GITHUB_OUTPUT"
+          UNO_VERSION=$(jq .devDependencies.unocss package.json -r)
+          TRIM_VERSION=${UNO_VERSION#^}
+          echo "value=$TRIM_VERSION" >> "$GITHUB_OUTPUT"
           tmp=$(mktemp)
-          jq --arg unoversion "${version}" '.version = "$unoversion"' package.json > "$tmp" && mv "$tmp" package.json
+          jq --arg a "$TRIM_VERSION" '.version = "$a"' package.json > "$tmp" && mv "$tmp" package.json
           git add package.json
-          git tag --force 'v${version}'
-          git commit --message 'v${version}'
+          git tag --force 'v$TRIM_VERSION'
+          git commit --message 'v$TRIM_VERSION'
           git push origin main --force
       - name: Create Release
         id: create_release
