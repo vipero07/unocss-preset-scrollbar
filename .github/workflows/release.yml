@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: 'Setup jq'
-        uses: dcarbone/install-jq-action@v2
+        uses: dcarbone/install-jq-action@v2.1.0
       - name: Extract and update version
         id: trim
         run: |
