@@ -1,9 +1,9 @@
+name: Create Release
+
 on:
   pull_request:
     branches: [ main ]
     types: [ closed ]
-
-name: Create Release
 
 permissions:
   contents: write
@@ -22,8 +22,9 @@ jobs:
           cmd: 'jq .devDependencies.unocss package.json -r'
       - name: Update package version in package.json
         uses: sergeysova/jq-action@v2
+        id: update
         with:
-          cmd: 'jq \'.version = "${{ steps.version.outputs.value }}"\' package.json'
+          cmd: jq '.version = "${{ steps.version.outputs.value }}"' package.json
       - uses: actions4git/setup-git@v1
       - run: |
           git add package.json
