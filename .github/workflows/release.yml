@@ -21,11 +21,12 @@ jobs:
         id: trim
         run: |
           unoversion=$(jq .devDependencies.unocss package.json -r)
-          echo "value=${unoversion#^}" >> "$GITHUB_OUTPUT"
-          jq --arg unoversion "${unoversion#^}" '.version = "$unoversion"' package.json
+          version=${unoversion#^}
+          echo "value=${version}" >> "$GITHUB_OUTPUT"
+          jq --arg unoversion "${version}" '.version = "$unoversion"' package.json
           git add package.json
-          git tag --force v${{ steps.trim.outputs.value }}
-          git commit --message 'v${{ steps.trim.outputs.value }}'
+          git tag --force 'v${version}'
+          git commit --message 'v${version}'
           git push origin main --force
       - name: Create Release
         id: create_release
