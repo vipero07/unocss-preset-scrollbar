@@ -29,7 +29,7 @@ jobs:
         uses: sergeysova/jq-action@v2
         id: update
         with:
-          cmd: jq '.version = "${{ steps.trim.outputs.value }}"' package.json
+          cmd: jq '.version = "${{ steps.trim.outputs.value }}"' package.json || jq .version package.json -r
       - uses: actions4git/setup-git@v1
       - run: |
           git add package.json
