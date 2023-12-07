@@ -1,0 +1,55 @@
+{
+  "name": "unocss-scrollbar-variant",
+  "version": "0.37.10",
+  "description": "scrollbar preset for UnoCSS",
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-scrollbar",
+    "unocss-preset-scrollbar-variant",
+    "unocss-scrollbar-variant",
+    "scrollbar"
+  ],
+  "homepage": "https://github.com/vipero07/unocss-preset-scrollbar#readme",
+  "bugs": {
+    "url": "https://github.com/vipero07/unocss-preset-scrollbar/issues"
+  },
+  "license": "MIT",
+  "author": "Eitan Stadtlander-Miller",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipero07/unocss-preset-scrollbar.git"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rimraf dist && tsc && unbuild",
+    "dev": "unbuild --stub",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@unocss/preset-mini": "^0.58.0"
+  },
+  "devDependencies": {
+    "bumpp": "^9.0.0",
+    "pnpm": "^8.1.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.2",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.58.0",
+    "vite": "^5.0.2"
+  }
+}
