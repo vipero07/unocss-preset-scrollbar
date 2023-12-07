@@ -1,6 +1,6 @@
 {
   "name": "unocss-scrollbar-variant",
-  "version": "$a",
+  "version": "0.58.0",
   "description": "scrollbar preset for UnoCSS",
   "keywords": [
     "unocss",
