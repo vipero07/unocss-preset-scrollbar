@@ -1,0 +1,43 @@
+on:
+  pull_request:
+    branches: [ main ]
+    types: [ closed ]
+
+name: Create Release
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Extract version from package.json
+        uses: sergeysova/jq-action@v2
+        id: version
+        with:
+          cmd: 'jq .devDependencies.unocss package.json -r'
+      - name: Update package version in package.json
+        uses: sergeysova/jq-action@v2
+        with:
+          cmd: 'jq \'.version = "${{ steps.version.outputs.value }}"\' package.json'
+      - uses: actions4git/setup-git@v1
+      - run: |
+          git add package.json
+          git tag --force v${{ steps.version.outputs.value }}
+          git commit --message 'v${{ steps.version.outputs.value }}'
+          git push origin main --force
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.value }}
+          release_name: Release ${{ steps.version.outputs.value }}
+          body: |
+            Changes in this Release
+            - Unocss bumped to ${{ steps.version.outputs.value }}
+          draft: false
+          prerelease: false

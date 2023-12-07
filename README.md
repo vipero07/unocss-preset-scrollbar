@@ -5,7 +5,7 @@ Scrollbar Preset for UnoCSS. Allows unocss utility classes to be used on scrollb
 ## Installation
 
 ```bash
-pnpm add @unocss/preset-scrollbar -D
+pnpm add unocss-scrollbar-variant -D
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ pnpm add @unocss/preset-scrollbar -D
 ```js
 // unocss.config.js
 import { defineConfig, presetUno } from 'unocss'
-import { presetScrollbar } from '@unocss/preset-scrollbar'
+import { presetScrollbar } from 'unocss-scrollbar-variant'
 
 export default defineConfig({
   presets: [
