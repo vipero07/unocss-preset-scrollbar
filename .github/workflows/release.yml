@@ -22,7 +22,7 @@ jobs:
         run: |
           unoversion=$(jq .devDependencies.unocss package.json -r)
           echo "value=${unoversion#^}" >> "$GITHUB_OUTPUT"
-          jq '.version = "${unoversion#^}"' package.json
+          jq --arg unoversion "${unoversion#^}" '.version = "$unoversion"' package.json > package.json 
       - uses: actions4git/setup-git@v1
       - run: |
           git add package.json
