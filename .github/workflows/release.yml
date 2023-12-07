@@ -23,7 +23,7 @@ jobs:
           unoversion=$(jq .devDependencies.unocss package.json -r)
           version=${unoversion#^}
           echo "value=${version}" >> "$GITHUB_OUTPUT"
-          jq --arg unoversion "${version}" '.version = "$unoversion"' package.json
+          jq --arg unoversion "${version}" '.version = "$unoversion"' package.json > "$tmp" && mv "$tmp" package.json
           git add package.json
           git tag --force 'v${version}'
           git commit --message 'v${version}'
