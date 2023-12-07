@@ -24,10 +24,10 @@ jobs:
           TRIM_VERSION=${UNO_VERSION#^}
           echo "value=$TRIM_VERSION" >> "$GITHUB_OUTPUT"
           tmp=$(mktemp)
-          jq --arg a "$TRIM_VERSION" '.version = "$a"' package.json > "$tmp" && mv "$tmp" package.json
+          jq --arg a "$TRIM_VERSION" '.version = $a' package.json > "$tmp" && mv "$tmp" package.json
           git add package.json
-          git tag --force 'v$TRIM_VERSION'
-          git commit --message 'v$TRIM_VERSION'
+          git tag --force "v$TRIM_VERSION"
+          git commit --message "v$TRIM_VERSION"
           git push origin main --force
       - name: Create Release
         id: create_release
