@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@unocss/preset-mini':
     specifier: ^0.58.0
-    version: 0.58.2
+    version: 0.58.3
 
 devDependencies:
   bumpp:
@@ -1249,8 +1249,8 @@ packages:
     resolution: {integrity: sha512-KhABQXGE2AgtO9vE28d+HnciuyGDcuygsnQdUwlzUuR4K05OSw2kRE9emRN4HaMycD+gA/zDbQrJxTXb6mQUiA==}
     dev: true
 
-  /@unocss/core@0.58.2:
-    resolution: {integrity: sha512-TYU6IRgnsZGVXpca6FYuXa3iJ1zI3hxgRhnb7TwE9j5t2GY4a/mjvg0K3MdiC8rzPP5hWWd9NXivBfJsr1SQpQ==}
+  /@unocss/core@0.58.3:
+    resolution: {integrity: sha512-9hTxzsrSLh+07ql/lGhE+8ZbE9MTTeZeMx131cPf2jDJUxAZooLE5pBCoK0k77ZJGcribRrwPGkUScBNOK0cYQ==}
 
   /@unocss/extractor-arbitrary-variants@0.58.0:
     resolution: {integrity: sha512-s9wK2UugJM0WK1HpgPz2kTbpeyQc46zais+nauN/ykVX6NMq8PtGzSWszzf+0aIbtWAQGiqAfiYNTpf09tJHfg==}
@@ -1258,10 +1258,10 @@ packages:
       '@unocss/core': 0.58.0
     dev: true
 
-  /@unocss/extractor-arbitrary-variants@0.58.2:
-    resolution: {integrity: sha512-/UOd7iGL8FxRnd4pvYzKX1lHvBeqgfw/MUwrIirta6k4sYsO4PVIszKGOEkstNqjGl90oQgxLGMjF3HGRAw8pg==}
+  /@unocss/extractor-arbitrary-variants@0.58.3:
+    resolution: {integrity: sha512-QszC2atLcvzyoZFsjgtMBbILN4lrYI60iVRWdii+GGiKVtoIaKRWiA/3WERkvYGVPseVWOMflUpfxNeq+s9zUw==}
     dependencies:
-      '@unocss/core': 0.58.2
+      '@unocss/core': 0.58.3
     dev: false
 
   /@unocss/inspector@0.58.0:
@@ -1312,12 +1312,12 @@ packages:
       '@unocss/rule-utils': 0.58.0
     dev: true
 
-  /@unocss/preset-mini@0.58.2:
-    resolution: {integrity: sha512-RhKRKKMCVMoceG8kcgoVm66GeCICM8mAStGSVnc6YUd2rwVVuJ3U8BD+szq6UnB6sISn9acfdCANUup91F5lEw==}
+  /@unocss/preset-mini@0.58.3:
+    resolution: {integrity: sha512-vPC97vZPY6J9uZ+KmK4x7atKFlZJPH4tR7+SmzTmguaGIHZJG8k1cjBCg+5M7P4MaxINRMukUQS8/mM/uWFqvQ==}
     dependencies:
-      '@unocss/core': 0.58.2
-      '@unocss/extractor-arbitrary-variants': 0.58.2
-      '@unocss/rule-utils': 0.58.2
+      '@unocss/core': 0.58.3
+      '@unocss/extractor-arbitrary-variants': 0.58.3
+      '@unocss/rule-utils': 0.58.3
     dev: false
 
   /@unocss/preset-tagify@0.58.0:
@@ -1365,15 +1365,15 @@ packages:
     resolution: {integrity: sha512-LBJ9dJ/j5UIMzJF7pmIig55MtJAYtG+tn/zQRveZuPRVahzP+KqwlyB7u3uCUnQhdgo/MJODMcqyr0jl6+kTuA==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/core': 0.58.2
+      '@unocss/core': 0.58.3
       magic-string: 0.30.5
     dev: true
 
-  /@unocss/rule-utils@0.58.2:
-    resolution: {integrity: sha512-cbrMvSuLf2ZMqJqmiCzIrrH59wEhnH4Ui/dnq/goWAqFe042nET8TcHz++2npc2T8EZlCMoC3zstCJzVbxGCVQ==}
+  /@unocss/rule-utils@0.58.3:
+    resolution: {integrity: sha512-0Px9gIW+VOKetZuYET19uamIRpk7A9c8sCzQuGlNvCLXKEWamqXz5asLtnvPzw6SwCXEQDgWXE9i+aeoXaM0Jg==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/core': 0.58.2
+      '@unocss/core': 0.58.3
       magic-string: 0.30.5
     dev: false
 
