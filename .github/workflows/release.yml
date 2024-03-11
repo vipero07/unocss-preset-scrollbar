@@ -31,7 +31,7 @@ jobs:
           git push origin main --force
       - name: Create Release
         id: create_release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.trim.outputs.value }}
           release_name: Release v${{ steps.trim.outputs.value }}
