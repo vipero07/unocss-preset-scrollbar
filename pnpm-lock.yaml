@@ -17,7 +17,7 @@ importers:
         version: 9.4.1
       pnpm:
         specifier: ^9.0.5
-        version: 9.4.0
+        version: 9.5.0
       rimraf:
         specifier: ^5.0.0
         version: 5.0.8
@@ -1623,8 +1623,8 @@ packages:
   pkg-types@1.0.3:
     resolution: {integrity: sha512-nN7pYi0AQqJnoLPC9eHFQ8AcyaixBUOwvqc5TDnIKCMEE6I0y8P7OKA7fPexsXGCGxQDl/cmrLAp26LhcwxZ4A==}
 
-  pnpm@9.4.0:
-    resolution: {integrity: sha512-9Um4pSydK4U2di+ZwHIiBe/Fr5E+d4NdvMw7CwssqefcgCK3gGLBcpHEjoh0nHDOiOtadPH6jEv14Yu0bIvYOg==}
+  pnpm@9.5.0:
+    resolution: {integrity: sha512-FAA2gwEkYY1iSiGHtQ0EKJ1aCH8ybJ7fwMzXM9dsT1LDoxPU/BSHlKKp2BVTAWAE5nQujPhQZwJopzh/wiDJAw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -3473,7 +3473,7 @@ snapshots:
       mlly: 1.4.2
       pathe: 1.1.2
 
-  pnpm@9.4.0: {}
+  pnpm@9.5.0: {}
 
   postcss@8.4.38:
     dependencies:
