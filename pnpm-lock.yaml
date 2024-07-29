@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@unocss/preset-mini':
         specifier: ^0.61.0
-        version: 0.61.5
+        version: 0.61.6
     devDependencies:
       bumpp:
         specifier: ^9.0.0
@@ -911,14 +911,8 @@ packages:
     resolution: {integrity: sha512-uUJj+ObvH1y2CqJ6KK+g9YkZ+insN8jk3xFha2nKOq3hCmUs8F6B06buWn3Nquin5HYP5Y416GaEJtQT4H0wgQ==}
     engines: {node: '>=14'}
 
-  '@unocss/core@0.61.5':
-    resolution: {integrity: sha512-hB8zr2rnrCzz9x8ho2SAXQiYTEjwAPMiBzpaEe2C0+CFWeL1179h9508YVyZHHAzMyZILIG9YrVAWrrMdt2/Xg==}
-
   '@unocss/core@0.61.6':
     resolution: {integrity: sha512-z1O1fnMRvmX1zkvbKVZ7jKUOHZHw/tUBYDNpll1rx9wjmps/MHfv7K5C5FiOTaW9S9H5r2LSjW/MaMs0dxgoCw==}
-
-  '@unocss/extractor-arbitrary-variants@0.61.5':
-    resolution: {integrity: sha512-UB1EweAaJrUxv+h3n5FqoizKHrnUgUzkdmOdJTfV6xvow90ITqbUoza+L6iVMNfcrcXTx8QpDnWh6rhLRyKY+g==}
 
   '@unocss/extractor-arbitrary-variants@0.61.6':
     resolution: {integrity: sha512-QLq4XBaQZsB7ONi3JLZwFtBLLSrZHTr1UhkqDumIhYL2tQx+xP2F88JdKXgnArolnX4QC7xFwUZ++8D8zaIAhw==}
@@ -937,9 +931,6 @@ packages:
 
   '@unocss/preset-icons@0.61.6':
     resolution: {integrity: sha512-fJqzZcskz+1e01rsgALuVY2dO2f/rlJzL5GUzcTrvg9mMdnk4XufoA15ItC6dopDj2SUomvR0hnKiYcAsAB5+g==}
-
-  '@unocss/preset-mini@0.61.5':
-    resolution: {integrity: sha512-gVm7Z9X0krx8CK/+pKAqcVmpqzRk1+SH7bfgRxKtKhyFSxJlwpjNp1rKm3gCT0F1Tlp3d8aufYRksaXGZhs8Ow==}
 
   '@unocss/preset-mini@0.61.6':
     resolution: {integrity: sha512-V/M+7vkDqyDiIinmBLfcqKsNJ3Lmr7NnWePq3s/KKrd8QEMUss+zHVZlk8clp4hrdT8gk0dUQZbrQkTi5dYWjQ==}
@@ -961,10 +952,6 @@ packages:
 
   '@unocss/reset@0.61.6':
     resolution: {integrity: sha512-fAlE2EbG5h6yS6oIBDOKw4VHogLcl/Ao9EbrcNe1uRc79cA1rvSkqeMAxLHvGxwXAzu7LIovknR+pzASeVLZBg==}
-
-  '@unocss/rule-utils@0.61.5':
-    resolution: {integrity: sha512-sCHnpCQoj3/ZmCjYo+oW3+4r5Z8kFI2snEL+miU2Uk0SqCgY1k0cUIYivj5L9ghp29p8VjEusX9M01QEZOYK7g==}
-    engines: {node: '>=14'}
 
   '@unocss/rule-utils@0.61.6':
     resolution: {integrity: sha512-OkAYqCWfbrBDBVfbulYx/6fWeEAVrw37/8VqsSlHD9UDc0Khz/M/4R+9oBhnNfdmqs3VccA2k7PdS5l5dghwzw==}
@@ -2699,13 +2686,7 @@ snapshots:
       '@unocss/core': 0.61.6
       unconfig: 0.3.13
 
-  '@unocss/core@0.61.5': {}
-
   '@unocss/core@0.61.6': {}
-
-  '@unocss/extractor-arbitrary-variants@0.61.5':
-    dependencies:
-      '@unocss/core': 0.61.5
 
   '@unocss/extractor-arbitrary-variants@0.61.6':
     dependencies:
@@ -2739,12 +2720,6 @@ snapshots:
       ofetch: 1.3.4
     transitivePeerDependencies:
       - supports-color
-
-  '@unocss/preset-mini@0.61.5':
-    dependencies:
-      '@unocss/core': 0.61.5
-      '@unocss/extractor-arbitrary-variants': 0.61.5
-      '@unocss/rule-utils': 0.61.5
 
   '@unocss/preset-mini@0.61.6':
     dependencies:
@@ -2780,11 +2755,6 @@ snapshots:
       '@unocss/rule-utils': 0.61.6
 
   '@unocss/reset@0.61.6': {}
-
-  '@unocss/rule-utils@0.61.5':
-    dependencies:
-      '@unocss/core': 0.61.5
-      magic-string: 0.30.10
 
   '@unocss/rule-utils@0.61.6':
     dependencies:
