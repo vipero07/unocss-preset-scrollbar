@@ -1,7 +1,7 @@
 import { definePreset } from 'unocss'
 import { colorResolver } from '@unocss/preset-mini/utils';
 
-export const presetScrollbar = definePreset({
+export const presetScrollbar = definePreset(()=>({
 	name: 'unocss-preset-scrollbar',
 	rules: [
 		[
@@ -56,6 +56,6 @@ export const presetScrollbar = definePreset({
 			}
 		]
 	]
-})
+}))
 
 export default presetScrollbar;
