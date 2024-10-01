@@ -35,7 +35,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "rimraf dist && tsc && unbuild",
+    "build": "rimraf dist && pnpm run typecheck && unbuild",
     "dev": "unbuild --stub",
     "release": "bumpp --commit --push --tag && pnpm publish",
     "typecheck": "tsc --noEmit"
