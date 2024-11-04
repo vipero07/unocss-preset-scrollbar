@@ -11,10 +11,10 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noImplicitAny": false,
-        "outDir": "./temp",
         "declaration": true,
-        "declarationDir": "./temp",
         "emitDeclarationOnly": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
         "paths": {
             "unocss-preset-scrollbar": [
                 "./src"
