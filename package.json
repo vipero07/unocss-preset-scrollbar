@@ -44,7 +44,7 @@
     "@unocss/preset-mini": "^65.4.0"
   },
   "devDependencies": {
-    "bumpp": "^9.0.0",
+    "bumpp": "^10.0.1",
     "pnpm": "^9.0.5",
     "rimraf": "^6.0.1",
     "typescript": "^5.0.2",
