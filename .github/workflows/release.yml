@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - uses: dcarbone/install-jq-action@v3.1.0
+      - uses: dcarbone/install-jq-action@v3.1.1
       - uses: actions4git/setup-git@v1
       - name: Extract and update version
         id: trim
