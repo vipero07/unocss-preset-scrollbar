@@ -17,7 +17,7 @@ importers:
         version: 10.1.1
       pnpm:
         specifier: ^10.2.1
-        version: 10.11.0
+        version: 10.12.1
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -1641,8 +1641,8 @@ packages:
   pkg-types@2.1.0:
     resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
 
-  pnpm@10.11.0:
-    resolution: {integrity: sha512-ZUBYP0HMX2KOs9l3Ps7oAvT575kjzEW2mJD7R5kdSwkpZGlOw6T3OKQgyRijMwYsi5JdMS9C5PDCY+tgNVH5dw==}
+  pnpm@10.12.1:
+    resolution: {integrity: sha512-8N2oWA8O6UgcXHmh2Se5Fk8sR46QmSrSaLuyRlpzaYQ5HWMz0sMnkTV4soBK8zR0ylVLopwEqLEwYKcXZ1rjrA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -3501,7 +3501,7 @@ snapshots:
       exsolve: 1.0.5
       pathe: 2.0.3
 
-  pnpm@10.11.0: {}
+  pnpm@10.12.1: {}
 
   postcss-calc@10.1.1(postcss@8.5.3):
     dependencies:
